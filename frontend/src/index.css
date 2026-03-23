@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Audit Paper canvas */
+    --background: 40 14% 97%;
+    --foreground: 0 0% 10%;
+
+    --card: 40 14% 97%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 40 14% 97%;
+    --popover-foreground: 0 0% 10%;
+
+    /* Primary = Ink */
+    --primary: 0 0% 10%;
+    --primary-foreground: 40 14% 97%;
+
+    --secondary: 40 6% 92%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 40 6% 92%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 40 6% 92%;
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 0 100% 58%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 82%;
+    --input: 0 0% 82%;
+    --ring: 0 0% 10%;
+
+    --radius: 2px;
+
+    /* Risk highlighters */
+    --risk-high: 0 100% 58%;
+    --risk-medium: 33 100% 50%;
+    --risk-low: 75 100% 55%;
+
+    /* Risk backgrounds (muted for highlights) */
+    --risk-high-bg: 0 100% 95%;
+    --risk-medium-bg: 33 100% 93%;
+    --risk-low-bg: 75 100% 90%;
+
+    /* Score */
+    --score-accent: 0 0% 10%;
+
+    --sidebar-background: 40 10% 95%;
+    --sidebar-foreground: 0 0% 20%;
+    --sidebar-primary: 0 0% 10%;
+    --sidebar-primary-foreground: 40 14% 97%;
+    --sidebar-accent: 40 6% 90%;
+    --sidebar-accent-foreground: 0 0% 10%;
+    --sidebar-border: 0 0% 82%;
+    --sidebar-ring: 0 0% 10%;
+  }
+
+  .dark {
+    --background: 0 0% 7%;
+    --foreground: 0 0% 92%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 92%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 92%;
+
+    --primary: 0 0% 92%;
+    --primary-foreground: 0 0% 7%;
+
+    --secondary: 0 0% 14%;
+    --secondary-foreground: 0 0% 92%;
+
+    --muted: 0 0% 14%;
+    --muted-foreground: 0 0% 55%;
+
+    --accent: 0 0% 14%;
+    --accent-foreground: 0 0% 92%;
+
+    --destructive: 0 100% 58%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 22%;
+    --input: 0 0% 22%;
+    --ring: 0 0% 92%;
+
+    --risk-high-bg: 0 60% 15%;
+    --risk-medium-bg: 33 60% 15%;
+    --risk-low-bg: 75 60% 15%;
+
+    --sidebar-background: 0 0% 9%;
+    --sidebar-foreground: 0 0% 80%;
+    --sidebar-primary: 0 0% 92%;
+    --sidebar-primary-foreground: 0 0% 7%;
+    --sidebar-accent: 0 0% 14%;
+    --sidebar-accent-foreground: 0 0% 92%;
+    --sidebar-border: 0 0% 22%;
+    --sidebar-ring: 0 0% 92%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Inter Tight', sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-serif-legal {
+    font-family: 'Crimson Pro', serif;
+  }
+  .font-mono-clause {
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .font-sans-tight {
+    font-family: 'Inter Tight', sans-serif;
+  }
+}
