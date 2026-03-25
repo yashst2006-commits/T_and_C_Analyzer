@@ -73,7 +73,7 @@ def get_rag_pipeline(app: FastAPI) -> TermsConditionsRAGPipeline:
 async def lifespan(app: FastAPI):
     # Keep startup lightweight so the API can boot even when optional ML models
     # are not cached locally yet.
-    ensure_nltk_resources()
+    #ensure_nltk_resources()
     #app.state.rag_pipeline = get_rag_pipeline(app)
     yield
 
