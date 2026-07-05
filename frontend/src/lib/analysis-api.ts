@@ -53,7 +53,7 @@ type BackendAnalyzeResponse = z.infer<typeof backendAnalyzeSchema>;
 const askResponseSchema = z.object({
   answer: z.string(),
 });
-const API_BASE = "https://t-and-c-analyzer-backend.onrender.com";
+const API_BASE = "http://127.0.0.1:8000";
 
 function normalizeApiError(error: unknown): Error {
   if (error instanceof TypeError && error.message === "Failed to fetch") {
